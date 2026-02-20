@@ -17,7 +17,7 @@ This project implements a mapping-driven autonomous rescue robot using Webots si
 ## How to Run
 1. Open Webots
 2. Load `worlds/rescue_easy.wbt`
-3. Run the controller
+3. Open the rescue_main.py to fix code and edit
 
 ## Project Structure
 controllers/
