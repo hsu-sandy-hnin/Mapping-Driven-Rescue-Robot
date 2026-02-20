@@ -1,0 +1,37 @@
+{"t": 0.0, "type": "run_start", "run_dir": "D:\\Robotic\\logs\\run_20260220_131411"}
+{"t": 0.0, "type": "device_ok", "device": "lidar", "name": "Sick LMS 291"}
+{"t": 0.0, "type": "device_ok", "device": "camera", "name": "camera"}
+{"t": 0.0, "type": "device_ok", "device": "gps", "name": "gps"}
+{"t": 0.0, "type": "device_ok", "device": "compass", "name": "compass"}
+{"t": 0.032, "type": "screenshot", "file": "cam_0.03.png"}
+{"t": 3.04, "type": "screenshot", "file": "cam_3.04.png"}
+{"t": 6.048, "type": "screenshot", "file": "cam_6.05.png"}
+{"t": 9.056000000000001, "type": "screenshot", "file": "cam_9.06.png"}
+{"t": 12.064, "type": "screenshot", "file": "cam_12.06.png"}
+{"t": 15.072000000000001, "type": "screenshot", "file": "cam_15.07.png"}
+{"t": 18.080000000000002, "type": "screenshot", "file": "cam_18.08.png"}
+{"t": 21.088, "type": "screenshot", "file": "cam_21.09.png"}
+{"t": 24.096, "type": "screenshot", "file": "cam_24.10.png"}
+{"t": 27.104, "type": "screenshot", "file": "cam_27.10.png"}
+{"t": 30.112000000000002, "type": "screenshot", "file": "cam_30.11.png"}
+{"t": 33.12, "type": "screenshot", "file": "cam_33.12.png"}
+{"t": 36.128, "type": "screenshot", "file": "cam_36.13.png"}
+{"t": 39.136, "type": "screenshot", "file": "cam_39.14.png"}
+{"t": 42.144, "type": "screenshot", "file": "cam_42.14.png"}
+{"t": 45.152, "type": "screenshot", "file": "cam_45.15.png"}
+{"t": 48.160000000000004, "type": "screenshot", "file": "cam_48.16.png"}
+{"t": 51.168, "type": "screenshot", "file": "cam_51.17.png"}
+{"t": 54.176, "type": "screenshot", "file": "cam_54.18.png"}
+{"t": 57.184000000000005, "type": "screenshot", "file": "cam_57.18.png"}
+{"t": 60.192, "type": "screenshot", "file": "cam_60.19.png"}
+{"t": 63.2, "type": "screenshot", "file": "cam_63.20.png"}
+{"t": 66.208, "type": "screenshot", "file": "cam_66.21.png"}
+{"t": 69.21600000000001, "type": "screenshot", "file": "cam_69.22.png"}
+{"t": 72.224, "type": "screenshot", "file": "cam_72.22.png"}
+{"t": 75.232, "type": "screenshot", "file": "cam_75.23.png"}
+{"t": 78.24, "type": "screenshot", "file": "cam_78.24.png"}
+{"t": 81.248, "type": "screenshot", "file": "cam_81.25.png"}
+{"t": 84.256, "type": "screenshot", "file": "cam_84.26.png"}
+{"t": 87.264, "type": "screenshot", "file": "cam_87.26.png"}
+{"t": 90.272, "type": "screenshot", "file": "cam_90.27.png"}
+{"t": 93.28, "type": "screenshot", "file": "cam_93.28.png"}
