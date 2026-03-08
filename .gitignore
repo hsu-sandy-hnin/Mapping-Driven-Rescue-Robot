@@ -1,0 +1,17 @@
+# Python cache/build artifacts
+__pycache__/
+*.py[cod]
+*.pyc.*
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Runtime outputs
+logs/
+controllers/rescue_main/logs/
+
+# Editor / OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

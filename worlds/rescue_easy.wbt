@@ -1,0 +1,1107 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/SandyGround.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/adept/pioneer3/protos/Pioneer3at.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/devices/sick/protos/SickLms291.proto"
+
+WorldInfo {
+  info [
+    "Pioneer 3AT robot (Adept MobileRobots)."
+    "This all terrain four wheels drive robot is  equipped with a Sick LMS 291 lidar."
+    "It is programmed to perform a simple obstacle avoidance behavior based on the sensor data measured by the lidar."
+  ]
+  title "Pioneer 3AT"
+  lineScale 0.5
+}
+Viewpoint {
+  orientation 0.26644549235411435 0.4349691278598523 -0.860121303894406 1.2376979457818302
+  position -9.588201025971696 22.77946624474032 16.682372353655037
+  follow "Pioneer 3-AT"
+  followSmoothness 0
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 60 60
+  floorTileSize 3 3
+  floorAppearance SandyGround {
+  }
+  wallThickness 0.2
+  wallHeight 0.8
+  wallAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/default/worlds/textures/gray_brick_wall.jpg"
+      ]
+    }
+    roughness 1
+    metalness 0
+    textureTransform TextureTransform {
+      scale 56 28
+    }
+  }
+}
+DEF OBSTACLE_1 Solid {
+  translation 15.7489 -12.6243 1
+  children [
+    DEF OBSTACLE_SHAPE Shape {
+      appearance PBRAppearance {
+        baseColor 0.898039 0.898039 0.898039
+        baseColorMap ImageTexture {
+          url [
+            "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/default/worlds/textures/rock.jpg"
+          ]
+        }
+        roughness 1
+        metalness 0
+        textureTransform TextureTransform {
+          scale 1.5 1.5
+        }
+      }
+      geometry Cylinder {
+        radius 0.4
+        subdivision 20
+      }
+    }
+  ]
+  name "obstacle"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_2 Solid {
+  translation -6.11857 18.7895 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(2)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_3 Solid {
+  translation 21.7282 24.6243 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(3)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_4 Solid {
+  translation 27.5208 6.81157 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(4)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_5 Solid {
+  translation -13.0666 5.54135 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(5)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_6 Solid {
+  translation -26.5756 20.8546 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(6)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_7 Solid {
+  translation 12.8 -27 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(7)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_8 Solid {
+  translation 2.48883 -16.7941 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(8)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_9 Solid {
+  translation -21.5071 -19.6972 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(9)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_10 Solid {
+  translation -11.3252 -23.9583 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(10)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_11 Solid {
+  translation -27.9213 27.5921 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(11)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_12 Solid {
+  translation -20.3505 12.0943 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(12)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_13 Solid {
+  translation -20.1731 -14.1931 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(13)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_14 Solid {
+  translation -12.5078 26.5308 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(14)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_15 Solid {
+  translation 23.5136 -16.3913 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(15)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_16 Solid {
+  translation 11.2747 3.27308 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(16)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_17 Solid {
+  translation 22.197 3.21502 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(17)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_18 Solid {
+  translation 28.4213 -6.60283 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(18)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_19 Solid {
+  translation 19.4685 20.9128 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(19)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_20 Solid {
+  translation 4.81033 27.563 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(20)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_21 Solid {
+  translation -2.91762 -27.7484 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(21)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_22 Solid {
+  translation 5.15002 -24.9015 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(22)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_23 Solid {
+  translation -14.717 -6.97726 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(23)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_24 Solid {
+  translation 28.6207 21.1249 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(24)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_25 Solid {
+  translation 15.5754 12.0666 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(25)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_26 Solid {
+  translation 9.79035 -14.8888 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(26)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_27 Solid {
+  translation -3.93434 -16.4364 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(27)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_27 Solid {
+  translation -3.93434 -5.9364 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(1)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_27 Solid {
+  translation 2.33566 -4.0264 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(45)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_27 Solid {
+  translation 2.33566 -9.9364 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(57)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_27 Solid {
+  translation -10.9543 -9.9364 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(58)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_27 Solid {
+  translation -7.2543 -0.9164 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(59)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_27 Solid {
+  translation -3.6543 6.0336 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(60)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_27 Solid {
+  translation 3.7057 6.0336 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(61)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_27 Solid {
+  translation 7.2457 1.4536 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(62)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_27 Solid {
+  translation 7.2457 -2.4364 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(63)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_28 Solid {
+  translation -27.7733 -5.49227 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(28)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_29 Solid {
+  translation -2.7517 25.0956 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(29)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_30 Solid {
+  translation -23.7889 0.62109 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(30)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_31 Solid {
+  translation -24.2 24.4 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(31)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_32 Solid {
+  translation -25.1618 -10.2537 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(32)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_33 Solid {
+  translation 23.4432 11.5598 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(33)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_34 Solid {
+  translation 24.6 -24.2 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(34)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_35 Solid {
+  translation 19.1942 -23.0269 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(35)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_36 Solid {
+  translation 16.558 -2.8216 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(36)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_37 Solid {
+  translation 5.42691 15.3295 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(37)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_38 Solid {
+  translation -16.683 24.0153 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(38)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_39 Solid {
+  translation -24.8 -23.6 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(39)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_40 Solid {
+  translation -28.0377 9.77742 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(40)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_41 Solid {
+  translation -18 -15 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(41)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_42 Solid {
+  translation -15 15.5 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(42)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_43 Solid {
+  translation 0 18 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(43)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_44 Solid {
+  translation 12 -3 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(44)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_46 Solid {
+  translation 17.5 16 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(46)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_47 Solid {
+  translation -18.5 2 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(47)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_48 Solid {
+  translation 2 -20 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(48)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_49 Solid {
+  translation 18 -11 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(49)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_50 Solid {
+  translation -18 -12 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(50)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_51 Solid {
+  translation -16 17 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(51)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_52 Solid {
+  translation 14 18 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(52)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_53 Solid {
+  translation 0 22 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(53)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_54 Solid {
+  translation 22 0 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(54)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_55 Solid {
+  translation -22 0 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(55)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF OBSTACLE_56 Solid {
+  translation 0 -22 1
+  children [
+    USE OBSTACLE_SHAPE
+  ]
+  name "obstacle(56)"
+  boundingObject USE OBSTACLE_SHAPE
+}
+DEF RESCUE_OBJECT_RED_TEMPLATE_HIDDEN Pose {
+  translation 1000 1000 -10
+  children [
+    DEF RESCUE_OBJECT_RED Group {
+      children [
+        Pose {
+          translation 0 0 0.23
+          children [
+            Shape {
+              appearance DEF VICTIM_PACK_BODY_APP PBRAppearance {
+                baseColor 0.43 0.3 0.17
+                roughness 0.55
+                metalness 0.02
+              }
+              geometry Box {
+                size 0.42 0.28 0.46
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0 0 0.5
+          children [
+            Shape {
+              appearance USE VICTIM_PACK_BODY_APP
+              geometry Box {
+                size 0.4 0.24 0.08
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0 0.18 0.22
+          children [
+            Shape {
+              appearance USE VICTIM_PACK_BODY_APP
+              geometry Box {
+                size 0.12 0.08 0.22
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0 -0.18 0.22
+          children [
+            Shape {
+              appearance USE VICTIM_PACK_BODY_APP
+              geometry Box {
+                size 0.12 0.08 0.22
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0.18 0 0.3
+          children [
+            Shape {
+              appearance DEF VICTIM_MARKER_RED_APP PBRAppearance {
+                baseColor 0.95 0.12 0.1
+                roughness 0.25
+                metalness 0
+                emissiveColor 0.18 0.03 0.02
+              }
+              geometry Box {
+                size 0.03 0.24 0.22
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0 0 0.33
+          children [
+            Shape {
+              appearance USE VICTIM_MARKER_RED_APP
+              geometry Box {
+                size 0.28 0.03 0.16
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0 0.155 0.3
+          children [
+            Shape {
+              appearance USE VICTIM_MARKER_RED_APP
+              geometry Box {
+                size 0.24 0.03 0.2
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0 -0.155 0.3
+          children [
+            Shape {
+              appearance USE VICTIM_MARKER_RED_APP
+              geometry Box {
+                size 0.24 0.03 0.2
+              }
+            }
+          ]
+        }
+        Pose {
+          translation -0.18 0 0.3
+          children [
+            Shape {
+              appearance USE VICTIM_MARKER_RED_APP
+              geometry Box {
+                size 0.03 0.24 0.22
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0 0 0.6
+          children [
+            Shape {
+              appearance DEF VICTIM_PACK_ACCENT_APP PBRAppearance {
+                baseColor 0.08 0.08 0.08
+                roughness 0.7
+                metalness 0
+              }
+              geometry Box {
+                size 0.14 0.03 0.05
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0.11 0 0.57
+          children [
+            Shape {
+              appearance USE VICTIM_PACK_ACCENT_APP
+              geometry Box {
+                size 0.03 0.18 0.12
+              }
+            }
+          ]
+        }
+        Pose {
+          translation -0.11 0 0.57
+          children [
+            Shape {
+              appearance USE VICTIM_PACK_ACCENT_APP
+              geometry Box {
+                size 0.03 0.18 0.12
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+DEF RESCUE_OBJECT_GREEN_TEMPLATE_HIDDEN Pose {
+  translation 1002 1000 -10
+  children [
+    DEF RESCUE_OBJECT_GREEN Group {
+      children [
+        Pose {
+          translation 0 0 0.23
+          children [
+            Shape {
+              appearance USE VICTIM_PACK_BODY_APP
+              geometry Box {
+                size 0.42 0.28 0.46
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0 0 0.5
+          children [
+            Shape {
+              appearance USE VICTIM_PACK_BODY_APP
+              geometry Box {
+                size 0.4 0.24 0.08
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0 0.18 0.22
+          children [
+            Shape {
+              appearance USE VICTIM_PACK_BODY_APP
+              geometry Box {
+                size 0.12 0.08 0.22
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0 -0.18 0.22
+          children [
+            Shape {
+              appearance USE VICTIM_PACK_BODY_APP
+              geometry Box {
+                size 0.12 0.08 0.22
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0.18 0 0.3
+          children [
+            Shape {
+              appearance DEF VICTIM_MARKER_GREEN_APP PBRAppearance {
+                baseColor 0.12 0.85 0.2
+                roughness 0.25
+                metalness 0
+                emissiveColor 0.02 0.15 0.03
+              }
+              geometry Box {
+                size 0.03 0.24 0.22
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0 0 0.33
+          children [
+            Shape {
+              appearance USE VICTIM_MARKER_GREEN_APP
+              geometry Box {
+                size 0.28 0.03 0.16
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0 0.155 0.3
+          children [
+            Shape {
+              appearance USE VICTIM_MARKER_GREEN_APP
+              geometry Box {
+                size 0.24 0.03 0.2
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0 -0.155 0.3
+          children [
+            Shape {
+              appearance USE VICTIM_MARKER_GREEN_APP
+              geometry Box {
+                size 0.24 0.03 0.2
+              }
+            }
+          ]
+        }
+        Pose {
+          translation -0.18 0 0.3
+          children [
+            Shape {
+              appearance USE VICTIM_MARKER_GREEN_APP
+              geometry Box {
+                size 0.03 0.24 0.22
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0 0 0.6
+          children [
+            Shape {
+              appearance USE VICTIM_PACK_ACCENT_APP
+              geometry Box {
+                size 0.14 0.03 0.05
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0.11 0 0.57
+          children [
+            Shape {
+              appearance USE VICTIM_PACK_ACCENT_APP
+              geometry Box {
+                size 0.03 0.18 0.12
+              }
+            }
+          ]
+        }
+        Pose {
+          translation -0.11 0 0.57
+          children [
+            Shape {
+              appearance USE VICTIM_PACK_ACCENT_APP
+              geometry Box {
+                size 0.03 0.18 0.12
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+DEF RESCUE_TARGET_5 Solid {
+  translation 23.9298 -14.9451 0.02
+  rotation 0 0 1 1.07
+  children [
+    USE RESCUE_OBJECT_RED
+  ]
+  name "victim_red_1"
+  boundingObject Pose {
+    translation 0 0 0.31
+    children [
+      Box {
+        size 0.5 0.36 0.64
+      }
+    ]
+  }
+}
+DEF RESCUE_TARGET_6 Solid {
+  translation -4.21416 -21.919 0.02
+  rotation 0 0 1 1.07
+  children [
+    USE RESCUE_OBJECT_RED
+  ]
+  name "victim_red_1(1)"
+  boundingObject Pose {
+    translation 0 0 0.31
+    children [
+      Box {
+        size 0.5 0.36 0.64
+      }
+    ]
+  }
+}
+DEF RESCUE_TARGET_7 Solid {
+  translation -3.66004 -9.30621 0.02
+  rotation 0 0 1 1.07
+  children [
+    USE RESCUE_OBJECT_RED
+  ]
+  name "victim_red_1(2)"
+  boundingObject Pose {
+    translation 0 0 0.31
+    children [
+      Box {
+        size 0.5 0.36 0.64
+      }
+    ]
+  }
+}
+DEF RESCUE_TARGET_8 Solid {
+  translation -8.92218 -18.9203 0.02
+  rotation 0 0 1 1.07
+  children [
+    USE RESCUE_OBJECT_RED
+  ]
+  name "victim_red_1(7)"
+  boundingObject Pose {
+    translation 0 0 0.31
+    children [
+      Box {
+        size 0.5 0.36 0.64
+      }
+    ]
+  }
+}
+DEF RESCUE_TARGET_9 Solid {
+  translation 5.89411 22.2283 0.02
+  rotation 0 0 1 1.07
+  children [
+    USE RESCUE_OBJECT_RED
+  ]
+  name "victim_red_1(8)"
+  boundingObject Pose {
+    translation 0 0 0.31
+    children [
+      Box {
+        size 0.5 0.36 0.64
+      }
+    ]
+  }
+}
+DEF RESCUE_TARGET_10 Solid {
+  translation -18.5671 -22.4642 0.02
+  rotation 0 0 1 1.07
+  children [
+    USE RESCUE_OBJECT_RED
+  ]
+  name "victim_red_1(9)"
+  boundingObject Pose {
+    translation 0 0 0.31
+    children [
+      Box {
+        size 0.5 0.36 0.64
+      }
+    ]
+  }
+}
+DEF RESCUE_TARGET_11 Solid {
+  translation 19.4977 8.76457 0.02
+  rotation 0 0 1 1.07
+  children [
+    USE RESCUE_OBJECT_RED
+  ]
+  name "victim_red_1(3)"
+  boundingObject Pose {
+    translation 0 0 0.31
+    children [
+      Box {
+        size 0.5 0.36 0.64
+      }
+    ]
+  }
+}
+DEF RESCUE_TARGET_12 Solid {
+  translation -14.7673 25.2848 0.02
+  rotation 0 0 1 1.07
+  children [
+    USE RESCUE_OBJECT_RED
+  ]
+  name "victim_red_1(4)"
+  boundingObject Pose {
+    translation 0 0 0.31
+    children [
+      Box {
+        size 0.5 0.36 0.64
+      }
+    ]
+  }
+}
+DEF RESCUE_TARGET_13 Solid {
+  translation 24.8011 17.536 0.02
+  rotation 0 0 1 1.07
+  children [
+    USE RESCUE_OBJECT_RED
+  ]
+  name "victim_red_1(5)"
+  boundingObject Pose {
+    translation 0 0 0.31
+    children [
+      Box {
+        size 0.5 0.36 0.64
+      }
+    ]
+  }
+}
+DEF RESCUE_TARGET_1 Solid {
+  translation -14.597 -0.02392 0.02
+  rotation 0 0 1 1.07
+  children [
+    USE RESCUE_OBJECT_RED
+  ]
+  name "victim_red_1(6)"
+  boundingObject Pose {
+    translation 0 0 0.31
+    children [
+      Box {
+        size 0.5 0.36 0.64
+      }
+    ]
+  }
+}
+DEF RESCUE_TARGET_2 Solid {
+  translation -21.6369 18.0921 0.02
+  rotation 0 0 1 -0.62
+  children [
+    USE RESCUE_OBJECT_GREEN
+  ]
+  name "victim_green_2"
+  boundingObject Pose {
+    translation 0 0 0.31
+    children [
+      Box {
+        size 0.5 0.36 0.64
+      }
+    ]
+  }
+}
+DEF RESCUE_TARGET_3 Solid {
+  translation -8.5 -7 0.02
+  rotation 0 0 1 2.22
+  children [
+    USE RESCUE_OBJECT_RED
+  ]
+  name "victim_red_3"
+  boundingObject Pose {
+    translation 0 0 0.31
+    children [
+      Box {
+        size 0.5 0.36 0.64
+      }
+    ]
+  }
+}
+DEF RESCUE_TARGET_4 Solid {
+  translation 7 9 0.02
+  rotation 0 0 1 0.34
+  children [
+    USE RESCUE_OBJECT_GREEN
+  ]
+  name "victim_green_4"
+  boundingObject Pose {
+    translation 0 0 0.31
+    children [
+      Box {
+        size 0.5 0.36 0.64
+      }
+    ]
+  }
+}
+DEF PIONEER_3AT Pioneer3at {
+  rotation 0 0 1 -0.25
+  controller "rescue_main"
+  supervisor TRUE
+  extensionSlot [
+    SickLms291 {
+      translation 0.136 0 0.35
+    }
+    GPS {
+      translation 0 0 0.2
+    }
+    Compass {
+      translation 0 0 0.2
+    }
+    Camera {
+      translation 0.2 0 0.35
+      width 640
+      height 480
+    }
+  ]
+}
